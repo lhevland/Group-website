@@ -2,8 +2,82 @@
 <header>
 <H1> About Us </h1>
 </header>
+<link href='../css/bootstrap.css'rel='stylesheet'>
 <body>
 <p> Hello, we are students from Newcastle who saw the need for a go to place for all things food.
-Together we've collated some of the best recipes for any occasion, budget or craving. Follow us on social media
-for more images and updates! </p>
+Together we've collated some of the best recipes for any occasion, budget or craving. Let us know below of any recipes suggestions
+and we will email you back within 24 hours if you have been chosen to show on our platform. For more updates follow us on social media!
+</p>
+<a class="icon-link round facebook fill"><i class="fa fa-facebook"></i></a>
+  <div id="social buttons">
+    <button class="btn btn-lg btn-twiiter">Twitter</button>
+    <button class="btn btn-lg btn-facebook">Facebook</button>
+    <button class="btn btn-lg btn-instagram">Instagram</button>
+  </div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Recipe Suggestion Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email">Email address</label>
+    <input type="text" id="Email" name="email" placeholder="Your email..">
+
+    <label for="Type of Recipe">Type of Recipe</label>
+    <select id="Type of Recipe" name="Type of Recipe">
+      <option value="Budget recipes">Budget</option>
+      <option value="Healthy recipes">Healthy</option>
+      <option value="Group recipes">Group</option>
+    </select>
+
+    <label for="text"> Your Recipe:</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
 </body>
