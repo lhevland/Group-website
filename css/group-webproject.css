@@ -1,5 +1,5 @@
 h1 {
-    color: grey;
+    color: black;
     text-align: center;
     font-family: helvetica;
     font-size: 40px;
@@ -22,6 +22,13 @@ body {
 font-family: helvetica;
 }
 
-image {
+.img-responsive{
+  height:500px;
+  weight:400px
+}
 
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
